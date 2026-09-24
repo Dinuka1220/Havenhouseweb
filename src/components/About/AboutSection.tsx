@@ -3,6 +3,10 @@ import { Star, CheckCircle2, Award } from 'lucide-react';
 import { useBooking } from '../../context/BookingContext';
 import { hotelDetails } from '../../data/hotelDetails';
 
+import aboutImg1 from '../../assets/images/r4.png';
+import aboutImg2 from '../../assets/images/r2.jpeg';
+import aboutImg3 from '../../assets/images/r3.jpeg';
+
 export const AboutSection: React.FC = () => {
   const { setIsBookingModalOpen } = useBooking();
 
@@ -18,7 +22,7 @@ export const AboutSection: React.FC = () => {
               {/* Main Primary Image */}
               <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl border-4 border-white aspect-[4/3] group">
                 <img
-                  src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=900&q=80"
+                  src={aboutImg1}
                   alt="Haven House Luxury Bedroom"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 />
@@ -28,7 +32,7 @@ export const AboutSection: React.FC = () => {
               {/* Secondary Floating Overlap Image */}
               <div className="absolute -top-6 -right-6 sm:-top-8 sm:-right-8 w-44 sm:w-56 aspect-[4/3] rounded-2xl overflow-hidden shadow-xl border-4 border-white hidden sm:block">
                 <img
-                  src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=500&q=80"
+                  src={aboutImg2}
                   alt="Ensuite Bathroom & Rain Shower"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                 />
@@ -37,7 +41,7 @@ export const AboutSection: React.FC = () => {
               {/* Third Bottom Overlap Image */}
               <div className="absolute -bottom-6 -left-6 sm:-bottom-8 sm:-left-8 w-48 sm:w-60 aspect-[4/3] rounded-2xl overflow-hidden shadow-xl border-4 border-white hidden sm:block">
                 <img
-                  src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&w=500&q=80"
+                  src={aboutImg3}
                   alt="Haven House Executive Suite"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                 />

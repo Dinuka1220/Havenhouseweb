@@ -1,3 +1,10 @@
+import img3 from '../assets/images/3.png';
+import r2 from '../assets/images/r2.jpeg';
+import r4 from '../assets/images/r4.png';
+import r5 from '../assets/images/r5.png';
+import r6 from '../assets/images/r6.png';
+import r7 from '../assets/images/r7.png';
+
 export interface Review {
   id: string;
   author: string;
@@ -68,44 +75,44 @@ export interface GalleryPhoto {
 export const galleryPhotos: GalleryPhoto[] = [
   {
     id: "gal-1",
-    image: "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=900&q=80",
+    image: r7,
     title: "Deluxe King Bedroom",
     category: "Rooms",
     likes: 248
   },
   {
     id: "gal-2",
-    image: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=900&q=80",
+    image: r2,
     title: "Luxury Bathroom & Soaking Tub",
     category: "Ensuite",
     likes: 312
   },
   {
     id: "gal-3",
-    image: "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&w=900&q=80",
+    image: r6,
     title: "Executive Coastal Vista",
     category: "Views",
     likes: 189
   },
   {
     id: "gal-4",
-    image: "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=900&q=80",
+    image: r5,
     title: "Haven Signature Suite Lounge",
     category: "Suites",
     likes: 420
   },
   {
     id: "gal-5",
-    image: "https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=900&q=80",
+    image: r4,
     title: "Boutique Ambient Lighting",
     category: "Interiors",
     likes: 275
   },
   {
     id: "gal-6",
-    image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=80",
-    title: "Barry Island Coastal Sunset",
-    category: "Barry Coastal",
+    image: img3,
+    title: "Haven House Suite Showcase",
+    category: "Haven Coastal",
     likes: 560
   }
 ];

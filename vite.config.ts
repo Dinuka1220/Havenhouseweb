@@ -8,5 +8,10 @@ export default defineConfig({
     tailwindcss(),
     react()
   ],
+  server: {
+    watch: {
+      ignored: ['**/src/assets/images/**', '**/node_modules/**', '**/.git/**']
+    }
+  }
 })
 

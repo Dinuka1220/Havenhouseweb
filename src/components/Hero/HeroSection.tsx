@@ -3,6 +3,8 @@ import { Play, Sparkles, Compass, ShieldCheck } from 'lucide-react';
 import { useBooking } from '../../context/BookingContext';
 import { BookingSearchWidget } from './BookingSearchWidget';
 
+import heroImg from '../../assets/images/r7.png';
+
 export const HeroSection: React.FC = () => {
   const { setIsBookingModalOpen, setIsVideoModalOpen } = useBooking();
 
@@ -14,7 +16,7 @@ export const HeroSection: React.FC = () => {
         <div
           className="absolute inset-0 bg-cover bg-center transition-transform duration-1000 scale-105"
           style={{
-            backgroundImage: `url('https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=2000&q=85')`
+            backgroundImage: `url(${heroImg})`
           }}
         />
 

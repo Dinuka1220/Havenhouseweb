@@ -2,6 +2,8 @@ import React from 'react';
 import { Play, Sparkles } from 'lucide-react';
 import { useBooking } from '../../context/BookingContext';
 
+import tourBg from '../../assets/images/r5.png';
+
 export const VirtualTourSection: React.FC = () => {
   const { setIsVideoModalOpen } = useBooking();
 
@@ -11,7 +13,7 @@ export const VirtualTourSection: React.FC = () => {
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-transform duration-1000 scale-105"
         style={{
-          backgroundImage: `url('https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=2000&q=85')`
+          backgroundImage: `url(${tourBg})`
         }}
       />
 

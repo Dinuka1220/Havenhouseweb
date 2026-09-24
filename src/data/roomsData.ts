@@ -1,3 +1,15 @@
+import img1 from '../assets/images/1.png';
+import img2 from '../assets/images/2.png';
+import img3 from '../assets/images/3.png';
+import img5 from '../assets/images/5.png';
+import r1 from '../assets/images/r1.jpg';
+import r2 from '../assets/images/r2.jpeg';
+import r3 from '../assets/images/r3.jpeg';
+import r4 from '../assets/images/r4.png';
+import r5 from '../assets/images/r5.png';
+import r6 from '../assets/images/r6.png';
+import r7 from '../assets/images/r7.png';
+
 export interface Room {
   id: string;
   name: string;
@@ -38,11 +50,7 @@ export const roomsData: Room[] = [
     },
     bedType: "1 Super King Bed",
     sizeSqFt: 380,
-    images: [
-      "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=1200&q=80"
-    ],
+    images: [r7, img1, r2],
     description: "Our signature Deluxe King Sanctuary combines understated elegance with supreme comfort. Enjoy ambient mood lighting, a luxury ensuite with walk-in rainfall shower, and plush Egyptian cotton linens.",
     features: ["Super King Bed", "Ensuite Rain Shower", "4K Smart TV", "Artisan Coffee Station", "Free High-Speed Wi-Fi"],
     amenities: [
@@ -73,11 +81,7 @@ export const roomsData: Room[] = [
     },
     bedType: "1 King Bed",
     sizeSqFt: 410,
-    images: [
-      "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=1200&q=80"
-    ],
+    images: [r6, img2, r3],
     description: "Elevate your stay in the Executive Coastal Vista Room. Features expansive windows with gentle morning light, a curated workspace, luxury velvet seating area, and decadent marble vanity.",
     features: ["Panoramic Bay Views", "Luxury Marble Bath", "Dedicated Workspace", "Complimentary Prosecco"],
     amenities: [
@@ -107,11 +111,7 @@ export const roomsData: Room[] = [
     },
     bedType: "1 Emperor Bed + Lounge Daybed",
     sizeSqFt: 560,
-    images: [
-      "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1590490359683-658d3d23f972?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=1200&q=80"
-    ],
+    images: [r5, img3, r4],
     description: "The pinnacle of boutique hotel luxury at Haven House. Features a private standalone deep soaking tub, separate living room parlor, bespoke oak bar, and floor-to-ceiling windows.",
     features: ["Freestanding Soaking Tub", "Separate Living Salon", "Emperor Sized Bed", "VIP Welcome Hamper"],
     amenities: [
@@ -141,11 +141,7 @@ export const roomsData: Room[] = [
     },
     bedType: "1 King Bed + 2 Twin Beds",
     sizeSqFt: 620,
-    images: [
-      "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80"
-    ],
+    images: [img5, r1, r2],
     description: "Designed for families and groups visiting Barry Island and the South Wales coast. Offers two interconnecting bedrooms, kitchenette with dining table, and board games library.",
     features: ["2 Separate Bedrooms", "Kitchenette & Dining Area", "Child Friendly", "Smart TV in both rooms"],
     amenities: [
