@@ -1,0 +1,129 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-gold: #C5A880;
+    --color-gold-hover: #b38e5d;
+    --color-gold-light: #F7F3EB;
+    --color-dark: #0F1416;
+    --color-dark-surface: #161B1E;
+    --color-dark-card: #1D2327;
+    --color-cream: #FAF8F5;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: #FAF8F5;
+    color: #2D3748;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-serif-luxury {
+    font-family: 'Playfair Display', 'Cormorant Garamond', Georgia, serif;
+  }
+
+  .font-cormorant {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+  }
+}
+
+/* Custom luxury animation keyframes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulseSlow {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.08);
+    opacity: 0.85;
+  }
+}
+
+@keyframes floatGentle {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-pulse-slow {
+  animation: pulseSlow 3s ease-in-out infinite;
+}
+
+.animate-float {
+  animation: floatGentle 4s ease-in-out infinite;
+}
+
+/* Glassmorphism effects */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.glass-dark {
+  background: rgba(15, 20, 22, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #DFCAAB 0%, #C5A880 50%, #9E7D52 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-gradient-bg {
+  background: linear-gradient(135deg, #C5A880 0%, #B38E5D 100%);
+}
+
+.gold-btn {
+  background: linear-gradient(135deg, #C5A880 0%, #B38E5D 100%);
+  color: #ffffff;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 14px rgba(197, 168, 128, 0.35);
+}
+
+.gold-btn:hover {
+  background: linear-gradient(135deg, #B38E5D 0%, #9B7545 100%);
+  box-shadow: 0 6px 20px rgba(197, 168, 128, 0.5);
+  transform: translateY(-2px);
+}
+
+/* Custom sleek scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF8F5;
+}
+::-webkit-scrollbar-thumb {
+  background: #D5C2A8;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B38E5D;
+}
